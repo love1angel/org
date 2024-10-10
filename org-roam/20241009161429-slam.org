@@ -1,0 +1,30 @@
+:PROPERTIES:
+:ID:       94769B0B-0BE6-4372-B797-4B4A41D87173
+:END:
+#+title: SLAM
+
+* books
+
+1. 视觉 SLAM 十四讲：从理论到实现
+2. 机器人学中的状态估计
+3. 机器人感知：因子图在 SLAM 中的应用 讲 GTSAM 的
+4. 第一本无人驾驶技术书（第二版）
+5. 概率机器人 Probabilistic Robotics
+6. 计算机视觉中的多视图几何 Multiple View Geometry in Computer Vision
+7. 机器人学中的状态估计 State Estimation for Robotics: A Matrix-Lie-Group Approach
+
+* key notes
+
+1. RAS
+2. Auto Robotics
+3. IROS
+
+* knowledge
+
+四元数，李代数，卡尔曼滤波，Bundle Adjustment，位姿图
+
+2003 MonoSLAM, 2016 ORB-SLAM
+
+数学理论：三维空间的刚体运动，非线性优化。计算机视觉的算法实现：多视图几何，回环检测
+
+摄影几何，计算机视觉，状态估计理论，李群和李代数

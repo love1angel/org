@@ -1,0 +1,26 @@
+:PROPERTIES:
+:ID:       373231FE-02EF-416D-91DD-99F3D1191FFD
+:END:
+#+title: algorithm
+
+* 袖珍计算器算法
+
+#+begin_export latex
+\[
+e^{i\pi} = -1
+\]
+#+end_export
+
+x ^ 1/2 = (e lnx) ^ 1/2 = e lnx/2
+
+* Newtons's method
+
+[https://en.wikipedia.org/wiki/Newton%27s_method]
+
+* sort
+
+** select sort
+
+** fish sort
+
+I've bisected the regression to <commit hash>.

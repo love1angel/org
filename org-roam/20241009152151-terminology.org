@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       3B324BC8-723C-4E73-BF45-34928D0DD13C
+:END:
+#+title: terminology
+
+| English | meaning                                                    | Chinese |
+|---------+------------------------------------------------------------+---------|
+| vanilla | having no special or extra features; ordinary or standard. | 香草    |
+|         |                                                            |         |
+|---------+------------------------------------------------------------+---------|

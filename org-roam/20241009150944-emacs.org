@@ -1,0 +1,83 @@
+:PROPERTIES:
+:ID:       162980C1-C418-4FF9-8C39-337B648EFE79
+:END:
+#+title: Emacs
+
+* Emacs install
+
+** MacBook
+[[[https://github.com/d12frosted/homebrew-emacs-plus?tab=readme-ov-file#install]]]
+#+begin_src shell
+  brew tap d12frosted/emacs-plus
+  brew install emacs-plus@30 --with-native-comp --with-modern-purple-flat-icon
+#+end_src
+
+** Windows
+
+sharp key
+
+* learning
+
+** meaning
+
+mode line
+
+mini buffer
+
+** key
+
+C-x C-e: execute lisp previous one line
+
+C-h t: tutorials
+C-h v: describe variable
+C-h f: describe function
+C-h k: describe key
+
+(server-mode 1)
+
+;; (setq tab-always-indent 'complete) give completion buffer
+;; (icomplete-mode t) give M-x options
+
+(global-set-key (kbd "<f1>") 'func)
+
+bind key func need add (interactive)
+
+lispy s-expression
+
+C-h m: mode
+
+REPL: read eval print loop
+
+C-x C-h 看 C-x 的快捷键
+
+C-c C-h
+
+C-x 是系统的，C-c 为用户保留的
+
+eval-buffer
+
+(global-set-key (kbd "C-h C-f") 'find-function)
+
+
+(global-company-mode 1)
+(define-key company-mode-map (kbd "C-n") 'company-select-next)
+(define-key company-active-map (kbd "C-n") 'company-select-next)
+
+
+(global-set-key (kbd "C-h C-f") 'find-function)
+(global-set-key (kbd "C-h C-v") 'find-variable)
+(global-set-key (kbd "C-h C-f") 'find-function-on-key)
+
+* lisp
+
+#+begin_src lisp
+  (+ 2 (* 3 4))
+
+  (setq name "xp")
+  (message name)
+
+  (defun func()
+    (message "hello, %s" name))
+
+  (func)
+#+end_src

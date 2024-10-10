@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       BF000F4D-9E59-4E29-BA5C-C7FBCE6A0E43
+:END:
+#+title: Methodology
+
+* Worldview
+
+** 空杯心态
+
+  [https://wiki.mbalib.com/wiki/%E7%A9%BA%E6%9D%AF%E5%BF%83%E6%80%81]
+
+* methodology
+
+** first principle thinking: 第一性原理
+
+  [https://wiki.mbalib.com/wiki/%E7%AC%AC%E4%B8%80%E6%80%A7%E5%8E%9F%E7%90%86]
+
+  回归事物最基本的条件，将其拆分为各要素进行解构分析，从而找到实现目标最优路径的方法。来源于古希腊哲学家亚里士多德提出的一个哲学观点：“每个系统中存在一个最基本的命题，它不能被违背或删除”。
+
+** Zettelkasten: 卡片盒笔记法
+
+* dialectics, Philosophy, Psychology

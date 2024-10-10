@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID:       CB309915-1104-4430-9F80-F338CC6EF660
+:END:
+#+title: thinker
+
+* compter science
+
+** atomic 相比 thread benefits？
+
+1. atomic 是由汇编语言保证的，更底层。thread 是由操作系统软件保证的。
+
+** CISC 与 RISC，文言文与白话文
+
+计算机中内存尤为重要，CISC 可以有效减少程序占用内存。古代造纸昂贵，所以类似
+
+* humanity
+
+** Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday

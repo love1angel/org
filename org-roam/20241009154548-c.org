@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       38F97C08-3471-456B-A1EE-F1A6FEBF440F
+:END:
+#+title: C++
+
+[https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines]

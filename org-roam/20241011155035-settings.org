@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID:       6477D0E3-056F-41F0-95AD-412A5D4D6966
+:END:
+#+title: settings
+
+* OS X
+
+** fonts
+
+#+begin_src shell
+  brew install font-jetbrains-mono-nerd-font
+#+end_src
+
+** tools
+
+#+begin_src shell
+  brew install ripgrep fd
+#+end_src

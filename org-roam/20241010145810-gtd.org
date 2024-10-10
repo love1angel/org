@@ -1,0 +1,65 @@
+:PROPERTIES:
+:ID:       EE8447BB-44C1-48B4-94B3-4B4CF6C27FBE
+:END:
+#+title: gtd
+
+* GTD
+
+** TODO Daily routine [0%]
+SCHEDULED: <2024-10-10 Fri 06:00 +1d>
+
+  - [ ] leetcode
+  - [ ] English learning
+
+** TODO SLAM book and video [0%] [https://space.bilibili.com/342754700/video?tid=188&special_type=&pn=1&keyword=&order=pubdate]
+DEADLINE: <2024-10-17 Thu 20:00> SCHEDULED: <2024-10-10 Thu 20:00>
+
+  - [ ] CH1
+  - [ ] CH2
+  - [ ] CH3
+  - [ ] CH4
+  - [ ] CH5
+  - [ ] CH6
+  - [ ] CH7
+  - [ ] CH8
+
+** TODO Algorithm [8%]
+DEADLINE: <2024-10-17 Thu 20:00> SCHEDULED: <2024-10-10 Thu 20:00>
+
+  - [X] CH1
+  - [ ] CH2
+  - [ ] CH3
+  - [ ] CH4
+  - [ ] CH5
+  - [ ] CH6
+  - [ ] CH7
+  - [ ] CH8
+  - [ ] CH9
+  - [ ] CH10
+  - [ ] CH11
+  - [ ] CH12
+
+** TODO Emacs learning [19%] [https://book.emacs-china.org/]
+DEADLINE: <2024-10-17 Thu 17:00> SCHEDULED: <2024-10-10 Thu 09:00>
+
+  - [X] 1
+  - [X] 2
+  - [X] 3
+  - [X] 4
+  - [ ] 5
+  - [ ] 6
+  - [ ] 7
+  - [ ] 8
+  - [ ] 9
+  - [ ] 10
+  - [ ] 11
+  - [ ] 12
+  - [ ] 13
+  - [ ] 14
+  - [ ] 15
+  - [ ] 16
+  - [ ] 17
+  - [ ] 18
+  - [ ] 19
+  - [ ] 20
+  - [ ] 21
