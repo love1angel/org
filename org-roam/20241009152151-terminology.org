@@ -6,5 +6,6 @@
 | English | meaning                                                    | Chinese |
 |---------+------------------------------------------------------------+---------|
 | vanilla | having no special or extra features; ordinary or standard. | 香草    |
+| Orion   | Greek. means a rising star                                 | 猎户座  |
 |         |                                                            |         |
 |---------+------------------------------------------------------------+---------|

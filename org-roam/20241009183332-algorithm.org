@@ -1,26 +1,28 @@
 :PROPERTIES:
 :ID:       373231FE-02EF-416D-91DD-99F3D1191FFD
 :END:
-#+title: algorithm
+#+title: Algorithm
 
-* 袖珍计算器算法
+* Numerical analysis
+
+** [[https://en.wikipedia.org/wiki/Newton%27s_method][Newtons's method]]
 
 #+begin_export latex
 \[
-e^{i\pi} = -1
+X_{n+1} = X_n - \frac{f(X_n)}{f'(X_n)}
 \]
 #+end_export
 
-x ^ 1/2 = (e lnx) ^ 1/2 = e lnx/2
+** estimate sqrt()
 
-* Newtons's method
-
-[https://en.wikipedia.org/wiki/Newton%27s_method]
+#+begin_export latex
+\[
+\sqrt{x} = x^{1/2} = \left( e^{\ln{x}} \right)^{1/2} = e^{\frac{1}{2} \ln{x}}
+\]
+#+end_export
 
 * sort
 
 ** select sort
 
 ** fish sort
-
-I've bisected the regression to <commit hash>.
