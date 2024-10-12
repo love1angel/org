@@ -17,4 +17,6 @@
 
 #+begin_src shell
   brew install ripgrep fd
+  brew install mactex --cask
+  # echo 'export PATH="/Library/TeX/texbin:$PATH"' >> ~/.zshrc
 #+end_src
