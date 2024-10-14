@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       705837EF-FD19-44C4-A788-DF38984F7CFA
+:END:
+#+title: ZJU-93001 data structure
+#+filetags: :csdiy:

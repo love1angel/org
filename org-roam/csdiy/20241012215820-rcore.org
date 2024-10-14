@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       1F9F36EA-B394-4DF1-BC54-C6610C3A159F
+:END:
+#+title: rCore
+#+filetags: :csdiy:
+
+[[https://github.com/rcore-os/rCore-Tutorial-v3][github]], [[https://rcore-os.cn/rCore-Tutorial-Book-v3/index.html][webpage]]

@@ -21,8 +21,18 @@ X_{n+1} = X_n - \frac{f(X_n)}{f'(X_n)}
 \]
 #+end_export
 
+* search
+
+** binary search
+
+ordered data
+
+* Polynomial
+
+[[https://en.wikipedia.org/wiki/Horner%27s_method][Qin Jiushao, Horner's method]]
+
 * sort
 
-** select sort
+** [[https://en.wikipedia.org/wiki/Selection_sort][selection sort]]
 
 ** fish sort

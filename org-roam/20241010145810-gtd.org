@@ -39,13 +39,13 @@ DEADLINE: <2024-10-17 Thu 20:00> SCHEDULED: <2024-10-10 Thu 20:00>
   - [ ] CH11
   - [ ] CH12
 
-** TODO Emacs learning [19%] [https://book.emacs-china.org/]
+** TODO Emacs learning [14%] [https://book.emacs-china.org/]
 DEADLINE: <2024-10-17 Thu 17:00> SCHEDULED: <2024-10-10 Thu 09:00>
 
   - [X] 1
   - [X] 2
   - [X] 3
-  - [X] 4
+  - [ ] 4
   - [ ] 5
   - [ ] 6
   - [ ] 7

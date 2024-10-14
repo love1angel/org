@@ -4,4 +4,4 @@
 #+title: C++
 #+filetags: :cpp:
 
-[https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines]
+[[https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines][CppCoreGuidelines]]
