@@ -4,4 +4,4 @@
 #+title: rCore
 #+filetags: :csdiy:
 
-[[https://github.com/rcore-os/rCore-Tutorial-v3][github]], [[https://rcore-os.cn/rCore-Tutorial-Book-v3/index.html][webpage]]
+[[https://github.com/rcore-os/rCore-Tutorial-v3][github]], [[https://rcore-os.cn/rCore-Tutorial-Book-v3/index.html][docs]]

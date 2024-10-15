@@ -9,3 +9,11 @@
 | Orion   | Greek. means a rising star                                 | 猎户座  |
 |         |                                                            |         |
 |---------+------------------------------------------------------------+---------|
+
+|            |        |
+|------------+--------|
+| inverse    | 逆     |
+| transpose  | 转置   |
+| covariance | 协方差 |
+
+I've bisected the regression to <commit hash>.

@@ -1,0 +1,53 @@
+:PROPERTIES:
+:ID:       6A937F39-05B8-4266-A6F2-0472AA3E1752
+:END:
+#+title: Mahalanobis distance
+
+[[https://en.wikipedia.org/wiki/Mahalanobis_distance][wiki]]
+
+#+begin_export latex
+Given a probability distribution \( Q \) on \( \mathbb{R}^N \), with mean \( \vec{\mu} = (\mu_1, \mu_2, \mu_3, \dots, \mu_N)^{\top} \) and positive semi-definite covariance matrix \( S \), the Mahalanobis distance of a point \( \vec{x} = (x_1, x_2, x_3, \dots, x_N)^{\top} \) from \( Q \) is
+
+\[
+d_M(\vec{x}, Q) = \sqrt{(\vec{x} - \vec{\mu})^{\top} S^{-1} (\vec{x} - \vec{\mu})}.
+\]
+
+Given two points \( \vec{x} \) and \( \vec{y} \) in \( \mathbb{R}^N \), the Mahalanobis distance between them with respect to \( Q \) is
+
+\[
+d_M(\vec{x}, \vec{y}; Q) = \sqrt{(\vec{x} - \vec{y})^{\top} S^{-1} (\vec{x} - \vec{y})}.
+\]
+#+end_export
+
+* example
+
+#+begin_src cpp
+  #include <iostream>
+  #include <Eigen/Dense>
+
+  double mahalanobisDistance(const Eigen::VectorXd& x, const Eigen::VectorXd& mean, const Eigen::MatrixXd& covMatrix) {
+      Eigen::VectorXd diff = x - mean;
+      Eigen::MatrixXd covMatrixInv = covMatrix.inverse();
+      double distance = std::sqrt(diff.transpose() * covMatrixInv * diff);
+      return distance;
+  }
+
+  int main() {
+      Eigen::VectorXd x(3);
+      x << 1.0, 2.0, 3.0;
+
+      Eigen::VectorXd mean(3);
+      mean << 1.0, 0.0, 1.0;
+
+      Eigen::MatrixXd covMatrix(3, 3);
+      covMatrix << 1.0, 0.2, 0.4,
+                   0.2, 1.5, 0.3,
+                   0.4, 0.3, 2.0;
+
+      double distance = mahalanobisDistance(x, mean, covMatrix);
+
+      std::cout << "Mahalanobis distance: " << distance << std::endl;
+
+      return 0;
+  }
+#+end_src

@@ -19,4 +19,6 @@
 
 ** Zettelkasten: 卡片盒笔记法
 
+** [[https://zh.wikipedia.org/zh-hans/%E5%BF%83%E6%B5%81%E7%90%86%E8%AB%96][心流理论]]
+
 * dialectics, Philosophy, Psychology

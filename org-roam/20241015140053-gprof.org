@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       7F834469-3F50-4E3B-9234-86BDAEC0094F
+:END:
+#+title: gprof
+
+[[https://sourceware.org/binutils/docs/gprof.html][docs]]

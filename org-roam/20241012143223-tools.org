@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       E3687867-BC03-43F9-BDDD-8D089A686971
+:END:
+#+title: tools
+
+* 流程图
+
+[[eww:https://github.com/mermaid-js/mermaid][mermaid]]
+
+优点：github 网页在线渲染
+
+* 词源
+
+[[eww:https://www.etymonline.com/][online etymology dictionary]]
+
+* TeX
+
+https://ks3-cn-beijing.ksyun.com/attachment/9ff9efaf747469424f48741629013db1
+
+[[eww:https://www.gnu.org/software/auctex/][AUCTeX]]

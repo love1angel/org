@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       41B64D92-B900-48B4-94B1-5007779EEDDA
+:END:
+#+title: bookmarks
+
+* Linux
+
+[[https://www.kernel.org/doc/html/latest/][docs]]

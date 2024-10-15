@@ -26,6 +26,12 @@
     |         |                                       |                                            |
     | scooter |                                       | 踏板摩托车                                 |
 
+
+* Maths
+
+    | cov. | covariance |
+
+
 * mail
 
     | CC  | Carbon Copy       |                                                                          |

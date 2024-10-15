@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       9C64A69E-F65B-41B9-AF6C-E9C0F559ABB1
+:END:
+#+title: Euclidean distance
+
+[[https://en.wikipedia.org/wiki/Euclidean_distance][wiki]]
+
+#+begin_export latex
+
+#+end_export

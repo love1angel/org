@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       6EB79030-0B96-4D85-8C34-629D0962E917
+:END:
+#+title: distance
+
+[[id:6A937F39-05B8-4266-A6F2-0472AA3E1752][Mahalanobis distance]]
+
+[[id:9C64A69E-F65B-41B9-AF6C-E9C0F559ABB1][Euclidean distance]]

@@ -3,3 +3,24 @@
 :END:
 #+title: ZJU-93001 data structure
 #+filetags: :csdiy:
+
+数据结构和算法是相辅相成的
+
+数据怎么组织，和数据的规模有关系（是要来用的）
+1. 解决问题的效率，和数据的组织方式直接相关
+2. 解决问题的效率，和空间的利用效率有关，递归
+3. 解决问题的效率，和算法的巧妙程度有关
+
+* CH1
+#+begin_src c
+#include <time.h>
+#include <stdio.h>
+
+int main()
+{
+    clock_t i1 = clock();
+    clock_t i2 = clock();
+    printf("%lf\n", (double)(i2 - i1) / CLOCKS_PER_SEC);
+    return 0;
+}
+#+end_src

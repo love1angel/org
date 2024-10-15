@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       8FE0AF30-77AA-4784-94F2-C23123A39CA0
+:END:
+#+title: performance
+
+* linux
+
+** g++
+
+[[id:7F834469-3F50-4E3B-9234-86BDAEC0094F][gprof]]
+
+* perf
+
+* valgrind
