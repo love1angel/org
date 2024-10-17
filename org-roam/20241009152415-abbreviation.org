@@ -7,6 +7,8 @@
 
     | GTD | Getting Things Done            |
     | [[https://en.wikipedia.org/wiki/Interface_description_language][IDL]] | Interface Description Language |
+    |     |                                |
+    | UML | Unified Modeling Language      |
 
 * AI (Artificial Intelligence)
 
@@ -26,11 +28,13 @@
     |         |                                       |                                            |
     | scooter |                                       | 踏板摩托车                                 |
 
-
 * Maths
 
     | cov. | covariance |
 
+* data structure
+
+    | ADT | Abstract Data Type |
 
 * mail
 

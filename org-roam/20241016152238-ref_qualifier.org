@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       7AF79505-8502-4090-9B6C-59A182BF73F5
+:END:
+#+title: ref qualifier
+#+filetags: :cpp11:todo:
+
+[[https://en.cppreference.com/w/cpp/language/member_functions][wiki]]

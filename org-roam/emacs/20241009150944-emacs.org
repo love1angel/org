@@ -26,6 +26,8 @@ mini buffer
 
 ** key
 
+C-k: delete one line from cursor to the end
+
 C-x C-e: execute lisp previous one line
 
 C-h t: tutorials
@@ -57,6 +59,8 @@ C-x 是系统的，C-c 为用户保留的
 eval-buffer
 
 (global-company-mode 1)
+(setq company-minimum-prefix-length 1)
+(setq company-idle-delay 0)
 (define-key company-mode-map (kbd "C-n") 'company-select-next)
 (define-key company-active-map (kbd "C-n") 'company-select-next)
 

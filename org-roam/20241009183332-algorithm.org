@@ -31,8 +31,32 @@ ordered data
 
 [[https://en.wikipedia.org/wiki/Horner%27s_method][Qin Jiushao, Horner's method]]
 
+#+begin_src cpp
+constexpr auto calc(const auto& nums, const auto& x)
+{
+    auto sum { 0 };
+    for (const auto& item : std::ranges::views::reverse(nums)) {
+        sum *= x;
+        sum += item;
+    }
+    return sum;
+}
+#+end_src
+
 * sort
 
 ** [[https://en.wikipedia.org/wiki/Selection_sort][selection sort]]
 
-** fish sort
+#+begin_src cpp
+constexpr auto selection_sort(auto& nums)
+{
+    for (auto i { nums.begin() }; i != nums.end(); ++i) {
+        auto min_pos = std::ranges::min_element(i, nums.end());
+        std::ranges::swap(*min_pos, *i);
+    }
+}
+#+end_src
+
+** TODO fish sort
+
+* TODO 「线段树求解最长公共上升子序列问题」的 pushUp 操作，线段树区间合并法解决多次询问的「区间最长连续上升序列问题」和「区间最大子段和问题」

@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       CC2F94E8-515D-4EE7-9940-4E04758B4761
+:END:
+#+title: misc
+
+push 远程，本地新加的 branch
+
+git push --set-upstream origin ft_panda/enable_v2x
+
+
+** 比较文件夹里的修改 diff
+
+diff -Naur APATH BPATH

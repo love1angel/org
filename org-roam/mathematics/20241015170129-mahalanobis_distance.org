@@ -2,6 +2,7 @@
 :ID:       6A937F39-05B8-4266-A6F2-0472AA3E1752
 :END:
 #+title: Mahalanobis distance
+#+filetags: :maths:adas:done:
 
 [[https://en.wikipedia.org/wiki/Mahalanobis_distance][wiki]]
 
