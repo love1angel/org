@@ -20,3 +20,21 @@
   brew install mactex --cask
   # echo 'export PATH="/Library/TeX/texbin:$PATH"' >> ~/.zshrc
 #+end_src
+
+
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+export HOMEBREW_API_DOMAIN="https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles/api"
+export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles"
+export HOMEBREW_BREW_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git"
+export HOMEBREW_CORE_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git"
+export HOMEBREW_PIP_INDEX_URL="https://pypi.tuna.tsinghua.edu.cn/simple"
+
+brew install vim neovim \
+	ripgrep fd \
+	cmake Ninja \
+	llvm
+
+brew tap d12frosted/emacs-plus
+brew install emacs-plus@31 --with-native-comp --with-poll --with-mailutils --with-imagemagick --with-modern-purple-flat-icon

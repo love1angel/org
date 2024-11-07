@@ -1,0 +1,79 @@
+:PROPERTIES:
+:ID:       9B72CF82-B77F-4AFA-ADF7-465336F5F039
+:END:
+#+title: CMake
+
+* common
+#+begin_src shell
+cmake -S . -B build \
+    -DCMAKE_EXPORT_COMPILE_COMMANDS=ON \
+    -DBUILD_TESTS=ON \
+    -DCMAKE_CXX_COMPILER=/opt/homebrew/opt/llvm/bin/clang++ -DCMAKE_C_COMPILER=/opt/homebrew/opt/llvm/bin/clang \
+    -G Ninja
+#+end_src
+
+* find_package
+
+✅ find_package(GTest REQUIRED)
+
+-- Found GTest: /opt/homebrew/lib/cmake/GTest/GTestConfig.cmake (found version "1.15.2")
+
+❌ find_package(GoogleTest REQUIRED)
+
+#+begin_src text
+  CMake Error at CMakeLists.txt:14 (find_package):
+  By not providing "FindGoogleTest.cmake" in CMAKE_MODULE_PATH this project
+  has asked CMake to find a package configuration file provided by
+  "GoogleTest", but CMake did not find one.
+
+  Could not find a package configuration file provided by "GoogleTest" with
+  any of the following names:
+
+    GoogleTestConfig.cmake
+    googletest-config.cmake
+
+  Add the installation prefix of "GoogleTest" to CMAKE_PREFIX_PATH or set
+  "GoogleTest_DIR" to a directory containing one of the above files.  If
+  "GoogleTest" provides a separate development package or SDK, be sure it has
+  been installed.
+#+end_src
+
+❌ find_package(Googletest REQUIRED)
+
+#+begin_src text
+  CMake Error at CMakeLists.txt:14 (find_package):
+  By not providing "FindGoogletest.cmake" in CMAKE_MODULE_PATH this project
+  has asked CMake to find a package configuration file provided by
+  "Googletest", but CMake did not find one.
+
+  Could not find a package configuration file provided by "Googletest" with
+  any of the following names:
+
+    GoogletestConfig.cmake
+    googletest-config.cmake
+
+  Add the installation prefix of "Googletest" to CMAKE_PREFIX_PATH or set
+  "Googletest_DIR" to a directory containing one of the above files.  If
+  "Googletest" provides a separate development package or SDK, be sure it has
+  been installed.
+#+end_src
+
+❌ find_package(googletest REQUIRED)
+
+#+begin_src text
+  CMake Error at CMakeLists.txt:14 (find_package):
+  By not providing "Findgoogletest.cmake" in CMAKE_MODULE_PATH this project
+  has asked CMake to find a package configuration file provided by
+  "googletest", but CMake did not find one.
+
+  Could not find a package configuration file provided by "googletest" with
+  any of the following names:
+
+    googletestConfig.cmake
+    googletest-config.cmake
+
+  Add the installation prefix of "googletest" to CMAKE_PREFIX_PATH or set
+  "googletest_DIR" to a directory containing one of the above files.  If
+  "googletest" provides a separate development package or SDK, be sure it has
+  been installed.
+#+end_src

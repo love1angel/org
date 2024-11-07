@@ -1,0 +1,100 @@
+:PROPERTIES:
+:ID:       5FB46750-5058-4184-9786-2272875C39FA
+:END:
+#+title: Parameterized Tests
+
+[https://google.github.io/googletest/advanced.html#value-parameterized-tests]
+
+考虑以下 C++ 代码
+
+#+begin_src cpp
+class Calculator {
+public:
+    enum class Operator : int {
+        add,
+        minus,
+        plus,
+        divide
+    };
+
+public:
+    int calculate(int lhs, int rhs, Operator op)
+    {
+        using enum Operator;
+        switch (op) {
+        case add:
+            return lhs + rhs;
+        case minus:
+            return lhs - rhs;
+        case plus:
+            return lhs * rhs;
+        case divide:
+            assert(rhs != 0);
+            return lhs / rhs;
+        default:
+            std::unreachable();
+        }
+        std::unreachable();
+    }
+};
+#+end_src
+
+我们可以对其做参数化的测试
+
+#+begin_src cpp
+template <typename TestParameter>
+std::string customTestName(const testing::TestParamInfo<TestParameter>& param_info)
+{
+    return param_info.param.test_name;
+}
+
+struct CalculatorTestParameter {
+    std::string test_name {};
+    int result;
+    int lhs;
+    int rhs;
+    Calculator::Operator op;
+};
+
+class CalculatorFixture : public ::testing::TestWithParam<CalculatorTestParameter> {
+public:
+    Calculator calculator;
+};
+
+TEST_P(CalculatorFixture, WhenNormalCalculationOperatorIs)
+{
+    auto result = calculator.calculate(GetParam().lhs, GetParam().rhs, GetParam().op);
+    EXPECT_EQ(result, this->GetParam().result);
+}
+
+INSTANTIATE_TEST_SUITE_P(CalculatorTestParameter,
+    CalculatorFixture,
+    ::testing::Values(
+        CalculatorTestParameter { "add", 3, 1, 2, Calculator::Operator::add },
+        CalculatorTestParameter { "minus", 1, 4, 3, Calculator::Operator::minus },
+        CalculatorTestParameter { "plus", 30, 5, 6, Calculator::Operator::plus },
+        CalculatorTestParameter { "divide", 4, 8, 2, Calculator::Operator::divide }),
+    customTestName<CalculatorTestParameter>);
+#+end_src
+
+展开为 parameter 结构体名 + test fixture 名 + ...
+
+#+begin_src text
+Running main() from /Users/heli/github/cpp/build/_deps/googletest-src/googletest/src/gtest_main.cc
+[==========] Running 4 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 4 tests from CalculatorTestParameter/CalculatorFixture
+[ RUN      ] CalculatorTestParameter/CalculatorFixture.WhenNormalCalculationOperatorIs/add
+[       OK ] CalculatorTestParameter/CalculatorFixture.WhenNormalCalculationOperatorIs/add (0 ms)
+[ RUN      ] CalculatorTestParameter/CalculatorFixture.WhenNormalCalculationOperatorIs/minus
+[       OK ] CalculatorTestParameter/CalculatorFixture.WhenNormalCalculationOperatorIs/minus (0 ms)
+[ RUN      ] CalculatorTestParameter/CalculatorFixture.WhenNormalCalculationOperatorIs/plus
+[       OK ] CalculatorTestParameter/CalculatorFixture.WhenNormalCalculationOperatorIs/plus (0 ms)
+[ RUN      ] CalculatorTestParameter/CalculatorFixture.WhenNormalCalculationOperatorIs/divide
+[       OK ] CalculatorTestParameter/CalculatorFixture.WhenNormalCalculationOperatorIs/divide (0 ms)
+[----------] 4 tests from CalculatorTestParameter/CalculatorFixture (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 4 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 4 tests.
+#+end_src
