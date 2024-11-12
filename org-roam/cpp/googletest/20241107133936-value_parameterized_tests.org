@@ -67,13 +67,16 @@ TEST_P(CalculatorFixture, WhenNormalCalculationOperatorIs)
     EXPECT_EQ(result, this->GetParam().result);
 }
 
+constexpr std::vector<CalculatorTestParameter> test_cases {
+    { "add", 3, 1, 2, Calculator::Operator::add },
+    { "minus", 1, 4, 3, Calculator::Operator::minus },
+    { "plus", 30, 5, 6, Calculator::Operator::plus },
+    { "divide", 4, 8, 2, Calculator::Operator::divide }
+};
+
 INSTANTIATE_TEST_SUITE_P(CalculatorTestParameter,
     CalculatorFixture,
-    ::testing::Values(
-        CalculatorTestParameter { "add", 3, 1, 2, Calculator::Operator::add },
-        CalculatorTestParameter { "minus", 1, 4, 3, Calculator::Operator::minus },
-        CalculatorTestParameter { "plus", 30, 5, 6, Calculator::Operator::plus },
-        CalculatorTestParameter { "divide", 4, 8, 2, Calculator::Operator::divide }),
+    ::testing::ValuesIn(test_cases),
     customTestName<CalculatorTestParameter>);
 #+end_src
 

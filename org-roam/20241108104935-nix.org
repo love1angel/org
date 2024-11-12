@@ -1,0 +1,55 @@
+:PROPERTIES:
+:ID:       A338519B-CED7-4C5C-8821-76D677B6FA1A
+:END:
+#+title: nix
+
+[https://nixos.org/download/]
+
+不在系统区域可见
+nix-shell -p neofetch --run neofetch
+
+
+mkdir -p ~/.config/nix/nix-darwin
+cd ~/.config/nix/nix-darwin
+nix flake init -t nix-darwin --extra-experimental-features "nix-command flakes"
+
+
+改完配置
+nix run nix-darwin --extra-experimental-features "nix-command flakes" -- switch --flake ~/.config/nix/nix-darwin#mac
+
+which darwin-rebuild
+
+darwin-rebuild switch --flake ~/.config/nix/nix-darwin#mac
+
+nix search nixpkgs tmux
+
+
+
+** test
+
+$ nix-shell -p git --run 'git clone xxx.git ~/.dotfiles'
+$ nix run nix-darwin --extra-experimental-features "nix-command flakes"  -- switch --flake ~/.dotfiles/nix/darwin#
+
+$ nix run nix-darwin --extra-experimental-features "nix-command flakes"  -- switch --flake ~/.config/nix-darwin#heli
+
+
+** under
+
+$ git revert
+$ darwin-rebuild switch --rollback
+
+
+nix flake update
+git status
+darwin-rebuild
+
+{
+    "clangd.arguments": [
+        "-header-insertion=never",
+        "--log=verbose",
+        "--pretty",
+        "--compile-commands-dir=${workspaceFolder}"
+    ]
+}
+
+mynixos.com

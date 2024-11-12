@@ -3,6 +3,6 @@
 :END:
 #+title: GoogleTest
 
-GoogleTest 用来做 [[id:38F97C08-3471-456B-A1EE-F1A6FEBF440F][C++]] 单元测试
+GoogleTest 用来做 [[id:38F97C08-3471-456B-A1EE-F1A6FEBF440F][C++]] 单元测试, [[id:57BF7937-1B90-4768-B3AA-88386952EDFF][gdb debug gtest]]
 
 参数化测试： [[id:5FB46750-5058-4184-9786-2272875C39FA][Value-Parameterized Tests]]

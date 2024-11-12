@@ -1,0 +1,28 @@
+:PROPERTIES:
+:ID:       57BF7937-1B90-4768-B3AA-88386952EDFF
+:END:
+#+title: gdb debug gtest
+
+[[id:0F3F5575-5A1E-4724-B9E9-AB65C6F1B237][gdb]] 调试 [[id:6B9CB319-28E0-46FD-8BAA-D0A665B3247A][GoogleTest]]
+
+* 调试带命令行参数的程序
+
+$ gdb <program path>
+
+...
+
+(gdb) run --gtest_filter="*"
+
+* TEST() 宏
+
+e.x. TEST(TestPerception, addObjects)
+
+** 添加 filter
+
+例子中的 filter 应该为 <TestPerception>.<addObjects>
+
+** 打断点
+
+首先我们需要打到 test body 中才能正常 debug
+
+例子中应该为 <TestPerception>_<addObjects>_Test::TestBody()

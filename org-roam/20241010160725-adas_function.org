@@ -6,3 +6,6 @@
 * L2
 
 [[id:0F430A45-EEBE-46EB-AE9C-E4B60D88A92F][ACC]]
+
+
+Object position relative to the host vehicle in ego coordinate system (origin is middle of rear axle) ego coordinate system: cartesian right-hand coordinate system with the following properties: - origin is the center point of the rear axle of the ego vehicle projected onto the road surface level - x-axis points towards the vehicle front end and lies parallel to the vehicle longitudinal median plane - y-axis points to the left (in relation to forward direction) and lies perpendicular to the vehicle longitudinal median plane - z-axis is vertical on the road surface level, points upwards.
