@@ -16,17 +16,20 @@
 
 * AD (Autonomous Driving)
 
-    | SLAM    | Simultaneous Localization and Mapping |                                            |
-    |         |                                       |                                            |
-    | TOR     | Take OveR                             |                                            |
-    | ADAS    | Autonomous Driving Assistance System  |                                            |
-    |         |                                       |                                            |
-    | SWA     | Side Warning Assist                   | 变道辅助，在变道时检测车辆侧面或后面的盲区 |
-    | LCA     | Lane Change Assist                    | 类似 SWA                                   |
-    |         |                                       |                                            |
-    | USS     | Ultrasonic Sensor System              | 超声波雷达                                 |
-    |         |                                       |                                            |
-    | scooter |                                       | 踏板摩托车                                 |
+    | SLAM      | Simultaneous Localization and Mapping |                                            |
+    |           |                                       |                                            |
+    | TOR       | Take OveR                             |                                            |
+    | ADAS      | Autonomous Driving Assistance System  |                                            |
+    |           |                                       |                                            |
+    | SWA       | Side Warning Assist                   | 变道辅助，在变道时检测车辆侧面或后面的盲区 |
+    | LCA       | Lane Change Assist                    | 类似 SWA                                   |
+    |           |                                       |                                            |
+    | USS       | Ultrasonic Sensor System              | 超声波雷达                                 |
+    |           |                                       |                                            |
+    | scooter   |                                       | 踏板摩托车                                 |
+    |           |                                       |                                            |
+    | Cartesian |                                       | adj. 笛卡尔坐标系                          |
+    |           |                                       |                                            |
 
 * Maths
 
@@ -56,6 +59,9 @@
     | AKA   | Also Known As    |
     | TBH   | To Be Honest     |
     | WIP   | Work In Progress |
+    |       |                  |
+    | i.e.  | that is          |
+    | e.x.  | for example      |
 
 * life
 

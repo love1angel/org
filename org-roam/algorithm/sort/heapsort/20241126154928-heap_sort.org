@@ -1,0 +1,54 @@
+:PROPERTIES:
+:ID:       6E287A86-F44B-4234-8F25-5BA46A008263
+:END:
+#+title: heap sort
+
+* heap sort
+
+|              |                 |          |
+|--------------+-----------------+----------|
+| std::greater | descending sort | min heap |
+| std::less    | ascending sort  | max heap |
+
+
+make_heap() 默认是构造最大堆，在 pop_heap() 后，将最大的移到了 back 位置
+
+堆排序就是不停构造堆，并且交换
+
+#+begin_src cpp
+#include <algorithm>
+#include <functional>
+#include <print>
+#include <vector>
+
+template <typename T, typename Comp = std::less<>>
+constexpr void heap_sort_1(std::vector<T>& vec, Comp cmp = Comp())
+{
+    for (auto remain { vec.size() }; remain > 1; --remain) {
+        std::make_heap(vec.begin(), vec.begin() + remain, cmp);
+        std::pop_heap(vec.begin(), vec.begin() + remain, cmp);
+    }
+}
+
+template <typename T, typename Comp = std::ranges::less>
+constexpr void heap_sort_2(std::vector<T>& vec, Comp cmp = Comp())
+{
+    std::ranges::make_heap(vec, cmp);
+    std::ranges::sort_heap(vec, cmp);
+}
+
+int main()
+{
+    std::vector<int> v { 3, 2, 4, 1, 5, 9 };
+    std::println("before sort: {}", v);
+
+    heap_sort_1(v, std::less<> {});
+    std::println("ascending sort result: {}", v);
+
+    heap_sort_2(v, std::ranges::greater {});
+    std::println("descending sort result: {}", v);
+
+    return 0;
+}
+
+#+end_src

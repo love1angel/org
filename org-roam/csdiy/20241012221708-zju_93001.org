@@ -12,7 +12,17 @@
 3. 解决问题的效率，和算法的巧妙程度有关
 
 * CH1
+
+逻辑结构：线性结构，树结构，图结构
+
+物理结构：数组，链表
+
+抽象数据类型：abstract data type
+
+矩阵：二维数组，十字链表
+
 #+begin_src c
+// calc duration
 #include <time.h>
 #include <stdio.h>
 
@@ -20,6 +30,8 @@ int main()
 {
     clock_t i1 = clock();
     clock_t i2 = clock();
+
+    // printf("%lf\n", (double)(i2 - i1) / CLK_TCK);
     printf("%lf\n", (double)(i2 - i1) / CLOCKS_PER_SEC);
     return 0;
 }

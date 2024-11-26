@@ -8,13 +8,14 @@
 不在系统区域可见
 nix-shell -p neofetch --run neofetch
 
+https://github.com/LnL7/nix-darwin
 
 mkdir -p ~/.config/nix/nix-darwin
 cd ~/.config/nix/nix-darwin
 nix flake init -t nix-darwin --extra-experimental-features "nix-command flakes"
 
 
-改完配置
+改完配置，不是 #mac 就是默认用户名
 nix run nix-darwin --extra-experimental-features "nix-command flakes" -- switch --flake ~/.config/nix/nix-darwin#mac
 
 which darwin-rebuild
@@ -24,18 +25,9 @@ darwin-rebuild switch --flake ~/.config/nix/nix-darwin#mac
 nix search nixpkgs tmux
 
 
-
-** test
-
-$ nix-shell -p git --run 'git clone xxx.git ~/.dotfiles'
-$ nix run nix-darwin --extra-experimental-features "nix-command flakes"  -- switch --flake ~/.dotfiles/nix/darwin#
-
-$ nix run nix-darwin --extra-experimental-features "nix-command flakes"  -- switch --flake ~/.config/nix-darwin#heli
-
-
 ** under
 
-$ git revert
+$ git revert <commit hash>
 $ darwin-rebuild switch --rollback
 
 
@@ -53,3 +45,8 @@ darwin-rebuild
 }
 
 mynixos.com
+
+** build
+
+$ nix-shell -p git --run 'git clone xxx.git ~/.dotfiles'
+$ nix run nix-darwin --extra-experimental-features "nix-command flakes"  -- switch --flake ~/.config/nix/nix-darwin#mac
